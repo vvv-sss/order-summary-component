@@ -76,16 +76,23 @@ table {
 /* #region */
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--color-primary-100);
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 30%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: 'Red Hat Display', sans-serif;
 }
+
 /* #endregion */
 
 /* === Main === */
@@ -96,6 +103,7 @@ main {
     max-height: 43.56rem;
     border-radius: 1.25rem;
     margin: 4.44rem 1.5rem;
+    -webkit-box-shadow: 0px 40px 40px -20px hsla(228, 87%, 39%, 0.15);
     box-shadow: 0px 40px 40px -20px hsla(228, 87%, 39%, 0.15);
     background-color: var(--color-neutral-400);
 }
@@ -111,6 +119,7 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 1.25rem 1.25rem 0 0;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -138,8 +147,14 @@ main {
 }
 
 .order-info__plan-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     row-gap: 1rem;
     padding: 1rem;
@@ -152,9 +167,18 @@ main {
 }
 
 .order-info__plan-price__annual-price-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 3.13rem;
     margin-left: 1.25rem;
@@ -181,6 +205,7 @@ main {
 }
 
 .order-info__plan-price__white-space {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
 
@@ -188,6 +213,8 @@ main {
     color: var(--color-primary-200);
     font-size: var(--font-size-100);
     font-weight: var(--fw-bold);
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
     transition: 0.1s;
 }
 
@@ -208,12 +235,15 @@ main {
     border: none;
     border-radius: 0.69rem;
     margin-bottom: 2.44rem;
+    -webkit-box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.19);
     box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.19);
     background-color: var(--color-primary-200);
     color: var(--color-neutral-400);
     font-size: var(--font-size-300);
     font-weight: var(--fw-black);
     cursor: pointer;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
     transition: 0.1s;
 }
 
@@ -227,12 +257,15 @@ main {
     font-size: var(--color-neutral-300);
     font-weight: var(--fw-black);
     text-decoration: none;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
     transition: 0.1s;
 }
 
 .order-info__payment a:hover {
     color: var(--color-neutral-300);
 }
+
 /* #endregion */
 
 /* === Media Queries === */
